@@ -1,11 +1,11 @@
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/f3849426-7996-4bbf-8086-0a184941c793/deploy-status)](https://app.netlify.com/sites/sage-profiterole-798517/deploys)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/d85c7385-95bf-485c-950c-6b08ca6a3f8c/deploy-status)](https://app.netlify.com/sites/animated-malasada-96586a/deploys)
 ### Проект Мессенджер 
 ### Данный репозиторий является учебным проектом курса Мидл фронтенд-разработчик на платформе Яндекс Практикум
 
 ### Макет проекта: [ссылка на Figma](https://www.figma.com/design/jF5fFFzgGOxQeB4CmKWTiE/Chat_external_link?node-id=0-1)
 
-### [Ссылка на проект](https://deploy--sage-profiterole-798517.netlify.app/)
+### [Ссылка на проект]([https://deploy--sage-profiterole-798517.netlify.app/](https://animated-malasada-96586a.netlify.app))
 
 ### Установка проекта
 #### выполнить команду в терминале git clone https://github.com/ddlein/middle.messenger.praktikum.yandex.git
