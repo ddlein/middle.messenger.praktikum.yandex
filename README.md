@@ -5,7 +5,7 @@
 
 ### Макет проекта: [ссылка на Figma](https://www.figma.com/design/jF5fFFzgGOxQeB4CmKWTiE/Chat_external_link?node-id=0-1)
 
-### [Ссылка на проект]([https://deploy--sage-profiterole-798517.netlify.app/](https://animated-malasada-96586a.netlify.app))
+### [Ссылка на проект](https://animated-malasada-96586a.netlify.app/)
 
 ### Установка проекта
 #### выполнить команду в терминале git clone https://github.com/ddlein/middle.messenger.praktikum.yandex.git
