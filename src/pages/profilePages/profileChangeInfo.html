@@ -9,21 +9,11 @@
 <body>
 <main class='profile'>
     <div class='profile__back-button'>
-        <a class='' href='/index' title='Назад'>
-            <img
-                src='../../assets/icons/back-button.png'
-                alt='кнопка возврата'
-                class='profile__back-icon'
-            >
-        </a>
+        {{> profileBackButton/profileBackButton}}
     </div>
     <div class='profile__container'>
         <div class='profile__card'>
-            <img
-                alt='стандартный аватар'
-                class='profile__no-avatar'
-                src='../../assets/icons/no-avatar.png'
-            />
+            {{> profileAvatar/profileAvatar}}
         </div>
         <form class='profile__input-container'>
             {{#each profileInputs}}
