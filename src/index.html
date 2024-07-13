@@ -8,15 +8,14 @@
 </head>
 
 <body>
-<main class='link-list'>
-    <a href='/pages/authPage/login/login'> Авторизация </a>
-    <a href='/pages/authPage/signin/signin'> Регистрация </a>
-    <a href='/pages/errorPage/404'> 404 </a>
-    <a href='/pages/errorPage/500'> 500 </a>
-    <a href='/pages/profilePages/profile'> Профиль </a>
-    <a href='/pages/profilePages/profileChangeInfo'> Изменение профиля </a>
-    <a href='/pages/profilePages/profileChangePassword'> Изменение пароля </a>
-    <a href='/pages/chat/chat'> Чат </a>
+<main>
+    <nav>
+        <ul class='link-list'>
+            {{#each navLinks}}
+            {{> indexNavLink/indexNavLink link=link name=name}}
+            {{/each}}
+        </ul>
+    </nav>
 </main>
 </body>
 </html>
