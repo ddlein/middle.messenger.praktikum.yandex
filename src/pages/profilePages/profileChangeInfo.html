@@ -1,0 +1,29 @@
+<html lang='ru'>
+<head>
+    <meta charset='UTF-8'/>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'/>
+    <link rel='stylesheet' href='profile.scss'/>
+    <title>{{title}}</title>
+</head>
+
+<body>
+<main class='profile'>
+    <div class='profile__back-button'>
+        {{> profileBackButton/profileBackButton}}
+    </div>
+    <div class='profile__container'>
+        <div class='profile__card'>
+            {{> profileAvatar/profileAvatar}}
+        </div>
+        <form class='profile__input-container'>
+            {{#each profileInputs}}
+            {{> profileInput/profileInput name=name label=label type=type value=value}}
+            {{/each}}
+        </form>
+        <div class='profile__submit'>
+            {{> authButtonsBlock/authButtonsBlock title='Сохранить'}}
+        </div>
+    </div>
+</main>
+</body>
+</html>
