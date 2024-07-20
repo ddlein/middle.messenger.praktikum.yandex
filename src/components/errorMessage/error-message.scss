@@ -1,8 +1,8 @@
 .error-page {
     display: flex;
-    justify-content: center;
-    align-items: center;
     height: 100%;
+    align-items: center;
+    justify-content: center;
 
     &__container {
         display: flex;
@@ -20,7 +20,7 @@
     }
 
     &__link {
-        font-size: 11px;
         margin-top: 60px;
+        font-size: 11px;
     }
 }

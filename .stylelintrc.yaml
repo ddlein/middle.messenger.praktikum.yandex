@@ -1,0 +1,59 @@
+extends:
+  - stylelint-config-standard
+  - stylelint-config-standard-scss
+  - stylelint-config-idiomatic-order
+  - stylelint-prettier/recommended
+plugins:
+  - stylelint-prettier
+ignoreFiles:
+  - src/styles/normalize.scss
+rules:
+  prettier/prettier:
+    - true
+    - singleQuote: true
+      tabWidth: 4
+      endOfLine: auto
+  at-rule-empty-line-before: null
+  indentation: 4
+  import-notation: url
+  at-rule-no-unknown:
+    - true
+    - ignoreAtRules:
+        - if
+        - else
+        - each
+        - for
+        - while
+        - function
+        - return
+        - include
+        - mixin
+        - extend
+        - content
+        - at-root
+        - error
+  no-descending-specificity: true
+  selector-type-no-unknown:
+    - true
+    - ignoreTypes:
+        - "_"
+        - x
+  no-duplicate-selectors: true
+  selector-pseudo-class-no-unknown: true
+  shorthand-property-no-redundant-values: true
+  selector-list-comma-newline-after: always
+  value-keyword-case: lower
+  selector-type-case: lower
+  unit-case: lower
+  unit-no-unknown: true
+  media-feature-parentheses-space-inside: never
+  selector-descendant-combinator-no-non-space: true
+  declaration-block-no-duplicate-custom-properties: true
+  selector-class-pattern: null
+  custom-property-pattern: null
+  function-url-quotes: null
+  scss/no-global-function-names: null
+  scss/dollar-variable-pattern: null
+  scss/double-slash-comment-empty-line-before: null
+  scss/dollar-variable-empty-line-before: null
+  number-max-precision: 6

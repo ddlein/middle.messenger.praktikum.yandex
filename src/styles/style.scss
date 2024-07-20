@@ -3,11 +3,11 @@
 
 @font-face {
     font-family: Inter;
-    src: url('../assets/fonts/Inter-Regular.ttf')
+    src: url('../assets/fonts/Inter-Regular.ttf');
 }
 
 * {
-    font-family: 'Inter', sans-serif;
+    font-family: Inter, sans-serif;
 }
 
 a {
@@ -15,11 +15,12 @@ a {
 }
 
 ul {
-    margin: unset;
     padding: unset;
+    margin: unset;
 }
 
 button {
+    color: #fff;
     cursor: pointer;
 }
 
@@ -32,10 +33,10 @@ li {
 }
 
 .link-list {
-    padding: 40px;
     display: flex;
-    justify-content: center;
     flex-direction: column;
-    text-align: center;
+    justify-content: center;
+    padding: 40px;
     gap: 20px;
+    text-align: center;
 }

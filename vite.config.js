@@ -1,14 +1,17 @@
 import {resolve} from 'path'
 import {defineConfig} from 'vite'
 import handlebars from 'vite-plugin-handlebars'
-import {pageData} from './src/pages/pages'
+import {pageData} from './src/pages/pages.js'
 
 export default defineConfig({
     root: resolve(__dirname, 'src'),
     build: {
         outDir: resolve(__dirname, 'dist'),
-        emptyOutDir: true,
-        assetsInlineLimit: Number.MAX_SAFE_INTEGER,
+        assetsInlineLimit: 0,
+        // emptyOutDir: true,
+        // assetsInlineLimit: Number.MAX_SAFE_INTEGER,
+        // assetsInlineLimit: 4096,
+
         rollupOptions: {
             input: {
                 index: resolve(__dirname, './src/index.html'),

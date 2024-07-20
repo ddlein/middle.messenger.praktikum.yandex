@@ -1,28 +1,27 @@
 @import url(../../styles/style.scss);
 @import url(../../components/chatUser/chat-user.scss);
 
-
 .chat {
     display: grid;
+    overflow: hidden;
     width: 100%;
     height: 100%;
     grid-template-columns: 1fr 8fr;
-    overflow: hidden;
 
     &__contacts-panel {
-        background: var(--color-white-panel);
-        border-right: 1px solid var(--color-light-grey);
-        padding: 0 16px 8px;
         overflow: auto;
         min-width: 400px;
+        padding: 0 16px 8px;
+        border-right: 1px solid var(--color-light-grey);
+        background: var(--color-white-panel);
     }
 
     &__contacts-top-panel {
-        height: 80px;
         position: sticky;
         top: 0;
-        background: #fbfbfb;
+        height: 80px;
         padding-bottom: 20px;
+        background: #fbfbfb;
     }
 
     &__contacts-profile {
@@ -30,19 +29,19 @@
         text-align: right;
 
         a {
-            font-size: 12px;
             color: var(--color-grey);
+            font-size: 12px;
         }
     }
 
     &__contacts-search {
-        background-color: var(--color-dirty-white);
+        width: 100%;
+        height: 32px;
         border: none;
         border-radius: 6px;
-        height: 32px;
+        background-color: var(--color-dirty-white);
         font-size: 12px;
         text-align: center;
-        width: 100%;
 
         &:focus {
             text-align: unset;
@@ -55,16 +54,16 @@
 
     &__user {
         display: flex;
-        gap: 10px;
-        border-bottom: 1px solid var(--color-light-grey);
-        border-top: 1px solid var(--color-light-grey);
         padding: 10px 0;
+        border-top: 1px solid var(--color-light-grey);
+        border-bottom: 1px solid var(--color-light-grey);
+        gap: 10px;
     }
 
     &__user-info {
         display: grid;
-        gap: 4px;
         width: 100%;
+        gap: 4px;
     }
 
     &__user-avatar {
@@ -77,8 +76,8 @@
     }
 
     &__user-text {
-        font-size: 12px;
         margin: unset;
+        font-size: 12px;
     }
 
     &__user-time {
@@ -86,20 +85,20 @@
     }
 
     &__dialog {
-        height: 100%;
-        padding: 0 16px 8px;
-        overflow: hidden;
         display: flex;
+        overflow: hidden;
+        height: 100%;
         flex-direction: column;
+        padding: 0 16px 8px;
     }
 
     &__dialog-top-panel {
-        height: 54px;
-        border-bottom: 1px solid var(--color-light-grey);
         position: sticky;
         top: 0;
         display: grid;
+        height: 54px;
         align-content: center;
+        border-bottom: 1px solid var(--color-light-grey);
     }
 
     &__dialog-contact {
@@ -113,38 +112,38 @@
     }
 
     &__dialog-bottom-panel {
-        border-top: 1px solid var(--color-light-grey);
         position: sticky;
         bottom: 0;
-        height: 54px;
-        width: 100%;
         display: grid;
+        width: 100%;
+        height: 54px;
         align-content: center;
+        border-top: 1px solid var(--color-light-grey);
     }
 
     &__input {
         width: 100%;
-        border-radius: 30px;
-        background-color: var(--color-dirty-white);
-        border: none;
         height: 32px;
         padding: 10px;
+        border: none;
+        border-radius: 30px;
+        background-color: var(--color-dirty-white);
     }
 }
 
 .dialog {
-    height: 100%;
-    overflow: auto;
-    padding: 20px;
     display: flex;
+    overflow: auto;
+    height: 100%;
     flex-direction: column;
+    padding: 20px;
     gap: 20px;
 
     &__message {
-        background: var(--color-close-to-white);
-        padding: 20px;
-        border-radius: 0 10px 10px 10px;
         max-width: 350px;
+        padding: 20px;
+        border-radius: 0 10px 10px;
+        background: var(--color-close-to-white);
         font-size: 13px;
 
         &_mine {
@@ -153,5 +152,4 @@
             background: var(--color-light-blue);
         }
     }
-
 }

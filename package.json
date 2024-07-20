@@ -5,15 +5,31 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
+    "prebuild": "tsc --noEmit",
+    "prebuild-watch": "tsc --noEmit --watch",
+    "build": "npm run prebuild && vite build",
     "preview": "vite preview",
-    "start": "npm run build && npm run preview"
+    "start": "npm run build && npm run preview",
+    "eslint": "node ./node_modules/eslint/bin/eslint.js --max-warnings=0 ./src",
+    "stylelint": "npx stylelint \"./src/**/*.{css,scss,sass}\""
   },
   "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^7.16.1",
+    "@typescript-eslint/parser": "^7.16.1",
+    "eslint": "^9.7.0",
     "sass": "^1.77.6",
+    "prettier": "^2.7.1",
+    "stylelint": "^14.12.1",
+    "stylelint-config-idiomatic-order": "^9.0.0",
+    "stylelint-config-prettier": "^9.0.3",
+    "stylelint-config-standard": "^28.0.0",
+    "stylelint-config-standard-scss": "^5.0.0",
+    "stylelint-prettier": "^2.0.0",
+    "typescript": "^5.5.3",
     "vite": "^5.3.1"
   },
   "dependencies": {
+    "stylelint-scss": "^6.4.1",
     "vite-plugin-handlebars": "^2.0.0"
   },
   "engines": {

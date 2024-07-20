@@ -5,21 +5,21 @@
 
 .profile {
     display: flex;
-    justify-content: center;
-    align-items: center;
     height: 100%;
+    align-items: center;
+    justify-content: center;
     font-size: 13px;
 
     &__back-button {
         position: absolute;
-        height: 100%;
         left: 0;
-        background: var(--color-white-panel);
-        width: 60px;
-        border-right: 1px solid var(--color-light-grey);
         display: flex;
-        justify-content: center;
+        width: 60px;
+        height: 100%;
         align-items: center;
+        justify-content: center;
+        border-right: 1px solid var(--color-light-grey);
+        background: var(--color-white-panel);
     }
 
     &__card {
@@ -39,18 +39,18 @@
     }
 
     &__container {
-        width: 510px;
         display: flex;
+        width: 510px;
         flex-direction: column;
-        gap: 50px;
         align-items: center;
+        gap: 50px;
     }
 
     &__input-container {
-        width: 100%;
-        gap: 16px;
         display: flex;
+        width: 100%;
         flex-direction: column;
+        gap: 16px;
 
         label:last-child {
             border: none;
@@ -58,10 +58,10 @@
     }
 
     &__manage {
-        width: 100%;
-        gap: 16px;
         display: flex;
+        width: 100%;
         flex-direction: column;
+        gap: 16px;
 
         a:last-child {
             border: none;

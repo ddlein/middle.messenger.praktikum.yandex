@@ -21,8 +21,8 @@ export const profileData = {
             {text: 'Изменить данные', href: '#', class: 'profile-link'},
             {text: 'Изменить пароль', href: '#', class: 'profile-link'},
             {text: 'Выйти', href: '#', class: 'profile-link profile-link_assertive'},
-        ]
+        ],
     },
     changeInfo: {title: 'Profile Change', profileInputs},
-    changePassword: {title: 'Password Change', passwordInputs}
+    changePassword: {title: 'Password Change', passwordInputs},
 }

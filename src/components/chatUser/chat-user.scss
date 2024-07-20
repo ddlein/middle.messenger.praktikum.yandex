@@ -1,9 +1,9 @@
 .user {
     display: flex;
-    gap: 10px;
-    border-bottom: 1px solid var(--color-light-grey);
-    border-top: 1px solid var(--color-light-grey);
     padding: 10px 0;
+    border-top: 1px solid var(--color-light-grey);
+    border-bottom: 1px solid var(--color-light-grey);
+    gap: 10px;
 
     &__avatar {
         width: 47px;
@@ -15,8 +15,8 @@
     }
 
     &__text {
-        font-size: 12px;
         margin: unset;
+        font-size: 12px;
     }
 
     &__time {

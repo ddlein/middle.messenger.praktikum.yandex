@@ -1,12 +1,12 @@
 import {loginData} from './authPage/login/login'
 import {signinData} from './authPage/signin/signin'
 import {profileData} from './profilePages/profile'
-import {chatData} from './chat/chatData.js'
+import {chatData} from './chat/chatData.ts'
 
 const indexData = {
     title: 'Index',
     navLinks: [
-        {link: '/pages/authPage/login/login', name: 'Авторизация'},
+        {link: '/pages/authPage/login/login', name: 'Авторизация1'},
         {link: '/pages/authPage/signin/signin', name: 'Регистрация'},
         {link: '/pages/errorPage/404', name: '404'},
         {link: '/pages/errorPage/500', name: '500'},
@@ -14,7 +14,7 @@ const indexData = {
         {link: '/pages/profilePages/profileChangeInfo', name: 'Изменение профиля'},
         {link: '/pages/profilePages/profileChangePassword', name: 'Изменение пароля'},
         {link: '/pages/chat/chat', name: 'Чат'},
-    ]
+    ],
 }
 
 export const pageData = {
